@@ -1,0 +1,63 @@
+.buttonHolder{
+  position: relative;
+}
+.parentContainer{
+  overflow-x:hidden;
+  padding-bottom: 24px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: -10px;
+  display: flex;
+  scroll-behavior: smooth;
+
+}
+
+.flexContainer{
+  display: flex;
+  flex-direction: row;
+  transition: transform 0.3s ease;
+}
+
+.thumb{
+  height: 100%;
+  background-color: #6E2254;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+.scrollTrack{
+  display: flex;
+  height: 4px;
+  width: 150px;
+  border-radius: 12px;
+  background-color: #F4F4F0;
+}
+.scrollPlacer{
+  display: flex;
+  justify-content: center;
+}
+
+.leftButton,.rightButton{
+  margin-left: -5px;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  height: 44px;
+  width: 44px;
+  border-radius: 100%;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.leftButton{
+  left: 10px;
+}
+.rightButton{
+  right: 10px;
+}
+
+.leftButton:hover,.rightButton:hover{
+  cursor: pointer;
+}
